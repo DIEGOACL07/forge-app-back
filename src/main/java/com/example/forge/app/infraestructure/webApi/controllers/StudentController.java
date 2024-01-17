@@ -116,7 +116,7 @@ public class StudentController {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(msg);
 		}
 	}
-
+	//
 	@DeleteMapping("{id}")
 	public ResponseEntity<?> deleteStudent(@PathVariable Long id) {
 		boolean deleted = studentService.deleteById(id);
